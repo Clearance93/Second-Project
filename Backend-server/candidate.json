@@ -1,0 +1,28 @@
+{
+  "candidates": [
+    {
+      "id": 20211,
+      "name": "Example",
+      "email": "example@yahoo.com",
+      "post": "Full stack web development"
+    },
+    {
+      "id": 20212,
+      "name": "Clearance Morumudi",
+      "email": "clearancemorumudi@outlook.com",
+      "post": "Full stack web development"
+    },
+    {
+      "id": 20213,
+      "name": "Tebogo Molekwa",
+      "email": "tebogomolekwa@gmail.com",
+      "post": "Data Capture"
+    },
+    {
+      "id": 20214,
+      "name": "Thango Morumudi",
+      "email": "thangomorumudi@yahoo.com",
+      "post": "full stack web dev"
+    }
+  ]
+}

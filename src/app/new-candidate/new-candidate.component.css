@@ -1,0 +1,41 @@
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+  
+  @media (min-width: 992px) {
+    .rounded-lg-3 { border-radius: .3rem; }
+  }
+  .btn{
+      margin: 10px;
+  }
+
+  .container_home{
+    background: linear-gradient(to top, yellow, orange, darkorange, orangered, red, maroon);
+}
+
+
+.h2{
+   color:#fff;
+   margin-left: 35%;
+   font-size: 2.9rem;
+}
+
+img{
+   width: 220px;
+   height: 120px;
+   margin-top: 10px;
+}
+
+
+label.validation-error {
+   color:red;
+   margin: 5px;
+}
+
+.hide {
+   display: none;
+}

@@ -1,0 +1,20 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Clearance",
+      "email": "clearancemorumudi@outlook.com",
+      "salary": "R33000",
+      "city": "Johannesburg",
+      "position": "Full stack web development"
+    },
+    {
+      "id": 2,
+      "name": "Thango Morumudi",
+      "email": "thangomorumudi@yahoo.com",
+      "salary": "R33000",
+      "city": "Johannesburg",
+      "position": "Full stack web development"
+    }
+  ]
+}

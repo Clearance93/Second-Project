@@ -36,25 +36,33 @@
             </div>
 
             <!-- Dashboard Content Begin -->
-            <div class="p-5 mb-4 bg-light rounded-3">
-                <div class="container-fluid py-5">
-                    <h2 class="display-5 fw-bold">If you are received an email to do online test, please sensure that you have the relevent reference with you that you have received via email</h2>
-                    <br /><br />
-                    <form >
-                        <label for="fName">First Name</label>
-                        <input type="text" name="fName" id="fName" required><br />
-                        <label for="lName">Last Name</label>
-                        <input type="text" name="lName" id="lName" required><br />
-                        <label for="ref">Reference Number</label>
-                        <input type="text" name="ref" id="ref" required><br />
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required>
-                        <br /><br />
-                    <a routerLink="/onlinetest"><button class="btn btn-primary btn-lg" type="button">Next</button></a>
-                    </form>
-                    
-                </div>
-            </div>
+            <main class="form-signin">
+                <form>
+                  <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+              
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="username" placeholder="Username" name="username" [(ngModel)]="user.username">
+                    <label for="floatingInput">Username</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" [(ngModel)]="user.password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+              
+                  <div class="checkbox mb-3">
+                    <label>
+                      <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                  </div>
+                  <a  href="javascript:void(0);"><button class="w-100 btn btn-lg btn-primary" type="submit" (click)="onClick()">Next</button></a>
+                  <p class="mt-5 mb-3 text-muted">&copy; 2021</p>
+
+                  <p>
+                      username = Clearance <br />
+                      password = Morumudi <br />
+                  </p>
+                </form>
+              </main>
             <!-- Dashboard Content End -->
 
         </main>

@@ -39,23 +39,27 @@
                         <label for="fullName">Full Name: (Required)</label>
                         <label class="validation-error hide" id="fullNameValidationError">The field is
                             required.</label>
-                        <input type="text" name="fullName" id="fullName" class="form-control" />
+                        <input type="text" name="fullName" [(ngModel)]="employee.name" id="fullName" class="form-control" />
                     </div> <br />
                     <div class="form-group">
                         <label for="email">Email ID:</label>
-                        <input type="text" name="email" id="email" class="form-control" />
+                        <input type="text" name="email" [(ngModel)]="employee.email" id="email" class="form-control" />
                     </div> <br />
                     <div class="form-group">
                         <label for="salary">Salary:</label>
-                        <input type="text" name="salary" id="salary" class="form-control" />
+                        <input type="text" name="salary" [(ngModel)]="employee.salary" id="salary" class="form-control" />
                     </div> <br />
                     <div class="form-group">
                         <label for="city">City:</label>
-                        <input type="text" name="city" id="city" class="form-control" />
+                        <input type="text" name="city" [(ngModel)]="employee.city" id="city" class="form-control" />
+                    </div> <br />
+                    <div class="form-group">
+                        <label for="city">Position:</label>
+                        <input type="text" name="position" [(ngModel)]="employee.position" id="position" class="form-control" />
                     </div> <br />
                     <br />
                     <div class="form-group">
-                        <input type="submit" value="Add New Employee" class="btn btn-primary" />
+                        <input type="submit" value="Add New Employee" class="btn btn-primary" (click)="addEmployee()"/>
                     </div>
                 </form>
             </div>
@@ -64,15 +68,23 @@
                 <table class="table table-striped" id="employeeList">
                     <thead>
                         <tr>
+                            <th>Employee ID</th>
                             <th>Full Name</th>
                             <th>Email Id</th>
                             <th>Salary</th>
                             <th>City</th>
-                            <th>Actions</th>
+                            <th>Position</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- populating table row from script -->
+                       <tr *ngFor="let emp of employeeList;">
+                           <td>{{emp.id}}</td>
+                           <td>{{emp.name}}</td>
+                           <td>{{emp.email}}</td>
+                           <td>{{emp.salary}}</td>
+                           <td>{{emp.city}}</td>
+                           <td>{{emp.position}}</td>>
+                       </tr>
                     </tbody>
                 </table>
             </div>

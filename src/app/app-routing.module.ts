@@ -11,9 +11,14 @@ import { EmployeesComponent } from './employees/employees.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CandidateFormComponent } from './candidate-form/candidate-form.component';
 import { NewsLetterComponent } from './news-letter/news-letter.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { NewCandidateComponent } from './new-candidate/new-candidate.component';
+import { CandidatesComponent } from './candidates/candidates.component';
+import { EmployeeLoginComponent } from './employee-login/employee-login.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
 
 
-const routes: Routes = [
+export const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'blog', component: BlogComponent},
@@ -25,6 +30,12 @@ const routes: Routes = [
   {path: 'dashboard', component: DashboardComponent},
   {path: 'candidate-form', component: CandidateFormComponent},
   {path: 'news-letter', component: NewsLetterComponent},
+  {path: 'new-candidate', component: NewCandidateComponent},
+  {path: 'employee-login', component: EmployeeLoginComponent},
+  {path: 'employee-list', component: EmployeeListComponent},
+  {path: 'candidates', component: CandidatesComponent},
+
+  {path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
